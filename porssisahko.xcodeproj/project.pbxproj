@@ -45,6 +45,7 @@
 		8FD915792D36CF4400C3179E /* porssisahkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = porssisahkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD9157D2D36CF4400C3179E /* porssisahkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = porssisahkoUITests.swift; sourceTree = "<group>"; };
 		8FD9157F2D36CF4400C3179E /* porssisahkoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = porssisahkoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FD915902D36DD5700C3179E /* porssisahko.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = porssisahko.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		8FD915552D36CF4000C3179E = {
 			isa = PBXGroup;
 			children = (
+				8FD915902D36DD5700C3179E /* porssisahko.entitlements */,
 				8FD915602D36CF4000C3179E /* porssisahko */,
 				8FD915722D36CF4400C3179E /* porssisahkoTests */,
 				8FD9157C2D36CF4400C3179E /* porssisahkoUITests */,
