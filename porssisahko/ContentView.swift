@@ -1,7 +1,6 @@
 import SwiftUI
 import Foundation
 
-// Define a model for the API response
 struct PriceResponse: Codable {
     let price: Double
 }
@@ -23,24 +22,20 @@ class APIService {
         }
 
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            // Check for errors
             if let error = error {
                 print("Error fetching price: \(error.localizedDescription)")
                 completion(nil)
                 return
             }
-
-            // Check for valid response and data
+            
             guard let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 print("Invalid response or data")
                 completion(nil)
                 return
             }
-
-            // Decode the JSON data into the appropriate structure
             do {
                 let priceResponse = try JSONDecoder().decode(PriceResponse.self, from: data)
-                completion(priceResponse.price) // Return the price value
+                completion(priceResponse.price)
             } catch {
                 print("Error decoding JSON: \(error.localizedDescription)")
                 completion(nil)
